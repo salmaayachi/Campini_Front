@@ -1,0 +1,16 @@
+<div class="card">
+  <h1 class="card-title">Past Events</h1>
+  <div class="card-body">
+    <div class="col-sm my-col" *ngFor="let item of events">
+      <app-pastevent [event]="item"> </app-pastevent>
+    </div>
+  </div>
+  <button
+    [hidden]="clicked"
+    type="button"
+    class="btn btn-secondary button btn-lg button"
+    (click)="sliced()"
+  >
+    See More
+  </button>
+</div>

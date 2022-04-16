@@ -1,0 +1,12 @@
+<div class="card">
+  <img class="card-img-top image" src="{{ image }}" alt="Card image cap" />
+  <div class="bottom-left top">{{ name }}</div>
+  <div class="bottom-left bottom">{{ place }} {{ date | date }}</div>
+  <div class="middle">
+    <p>
+      <button class="btn btn-outline-secondary" (click)="openDialog()">
+        Know more !
+      </button>
+    </p>
+  </div>
+</div>
